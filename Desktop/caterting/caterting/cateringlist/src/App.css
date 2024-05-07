@@ -1,0 +1,255 @@
+.item {
+    margin-bottom: 10px;
+}
+
+.delete-button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.delete-button:hover {
+    background-color: darkred;
+}
+
+input[type='checkbox'] {
+    margin-right: 5px;
+}
+
+/* App.css */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .login-card {
+    background-color: lightblue;
+    padding: 30px; /* Increased padding */
+    border-radius: 10px; /* Increased border radius */
+    width: 350px; /* Increased width */
+  }
+  
+  .login-heading {
+    color: navy;
+    text-align: center;
+    margin-bottom: 20px; /* Added margin bottom for spacing */
+  }
+  
+  .input-field {
+    width: calc(100% - 20px); /* Adjusted width to fit within the card */
+    padding: 10px; /* Adjusted padding */
+    margin-bottom: 15px; /* Adjusted margin bottom */
+    border: 1px solid #ccc; /* Added border for clarity */
+    border-radius: 5px;
+  }
+  
+  .login-button {
+    width: 100%;
+    padding: 12px; /* Adjusted padding */
+    background-color: navy;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial;
+    padding: 10px;
+    background: #f1f1f1;
+  }
+  
+  /* Header/Blog Title */
+  .header {
+    padding: 30px;
+    text-align: center;
+    background: white;
+  }
+  
+  .header h1 {
+    font-size: 50px;
+  }
+  
+  /* Style the top navigation bar */
+  .topnav {
+    overflow: hidden;
+    background-color: #ffff;
+    height:80px;
+  }
+  
+  /* Style the topnav links */
+  .topnav a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    height : 80px;
+  }
+  
+  /* Change color on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Create two unequal columns that floats next to each other */
+  /* Left column */
+  .leftcolumn {   
+    float: left;
+    width: 75%;
+  }
+  
+  /* Right column */
+  .rightcolumn {
+    float: left;
+    width: 25%;
+    background-color: #f1f1f1;
+    padding-left: 20px;
+  }
+  
+  /* Fake image */
+  .fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+  }
+  
+  /* Add a card effect for articles */
+  .card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 100px;
+    height: 50%;
+  }
+  .row{
+    margin: 50px;
+  }
+  /* Clear floats after the columns */
+  .row::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+
+  
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+      width: 100%;
+      padding: 0;
+      
+    }
+  }
+  
+  /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+  @media screen and (max-width: 400px) {
+    .topnav a {
+      float: none;
+      width: 100%;
+    }
+  }
+  .card2 img {
+    width: 100%; /* Ensure the image takes up the full width of the container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: Add border-radius for rounded corners */
+}
+
+
+  .card2 {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.card2 h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.card2 h5 {
+    font-size: 16px;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+.card2 p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+.card-container {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap into multiple lines */
+  gap: 20px; /* Add some space between cards */
+}
+
+.card2 {
+  width: calc(50% - 20px); /* Make each card take 50% of the container width with gap */
+}
+
+@media (min-width: 768px) {
+  .card2 {
+      width: calc(33.33% - 20px); /* On larger screens, make each card take 1/3 of the container width with gap */
+  }
+}
+
+.report-card {
+  width: 80%;
+  margin: 0 auto; /* Center the card */
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.report-content {
+  font-size: 1.2rem; /* Increase font size */
+}
+
+.report-title {
+  text-align: center;
+}
+
+.headcount-container {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.category-container p {
+  margin: 5px 0;
+}
+#customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #84bbd7;
+  color: white;
+}
